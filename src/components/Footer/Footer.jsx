@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import social from '/social.png';
 
 const Footer = () => {
   return (
@@ -10,6 +11,7 @@ const Footer = () => {
             <p className="text-xs text-[#FFFFFF] opacity-70 leading-5 lg:w-80">
             Embark on a transformative journey for your career by exploring CareerHub and elevating your professional aspirations.
             </p>
+            <img src={social} alt="" className="w-24"/>
         </nav>
         <nav>
             <header className="text-sm font-medium">Company</header>
