@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../utility/localstorage";
 import AppliedJobsList from '../AppliedJobsList/AppliedJobsList';
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { Helmet } from 'react-helmet-async';
 
 
 const AppliedJobs = () => {
@@ -47,6 +48,9 @@ const AppliedJobs = () => {
 
     return (
         <div>
+        <Helmet>
+           <title>CareerPro | Applied Jobs</title>
+        </Helmet>
           <div className='bg-gradient-to-r from-[#f1f3ff] to-[#f5f1ff] py-20 mb-16'>
             <h2 className="text-xl font-extrabold text-center">Applied Jobs</h2>
           </div>

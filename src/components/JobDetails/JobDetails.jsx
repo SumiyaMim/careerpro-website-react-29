@@ -9,6 +9,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveJobApplication } from '../../utility/localstorage';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -27,6 +28,9 @@ const JobDetails = () => {
 
   return (
     <div>
+       <Helmet>
+           <title>Job Details - {id}</title>
+       </Helmet>
       <div className='bg-gradient-to-r from-[#f1f3ff] to-[#f5f1ff] py-20 mb-16'>
             <h2 className="text-xl font-extrabold text-center">Job Details</h2>
       </div>
